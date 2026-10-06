@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Ensemble · Ensemble</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --background: #FAF6EF; --surface: #F5F0E8; --text-primary: #1A1A18;
+  --text-secondary: rgba(26,26,24,.66); --text-muted: rgba(26,26,24,.40);
+  --border: rgba(26,26,24,.15); --terracotta: #C4714A;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1A1A18; --surface: #272723; --text-primary: #F5F0E8;
+    --text-secondary: rgba(245,240,232,.66); --text-muted: rgba(245,240,232,.40);
+    --border: rgba(255,255,255,.08);
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--background); color: var(--text-secondary);
+  font: 400 15px/1.6 "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+main { max-width: 680px; margin: 0 auto; padding: 32px 24px 64px; }
+nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+.brand { color: var(--text-primary); font-weight: 800; font-size: 18px; letter-spacing: -.3px; text-decoration: none; }
+.brand::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--terracotta); margin-inline-end: 8px; vertical-align: middle; }
+.switch { color: var(--text-muted); font-size: 13px; text-decoration: none; border: 1px solid var(--border);
+  border-radius: 999px; padding: 6px 14px; }
+h1 { color: var(--text-primary); font-size: 30px; font-weight: 800; letter-spacing: -1px; line-height: 1.15; margin: 0 0 8px; }
+.date { color: var(--text-muted); font-size: 12px; margin: 0 0 24px; }
+h2 { color: var(--text-primary); font-size: 15px; font-weight: 600; margin: 28px 0 8px; }
+p { margin: 0 0 10px; }
+ul { margin: 0 0 10px; padding-inline-start: 20px; }
+li { margin-bottom: 6px; }
+li::marker { color: var(--terracotta); }
+a { color: var(--terracotta); }
+.cards { display: grid; gap: 12px; margin-top: 24px; }
+.card { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 22px;
+  padding: 18px 20px; color: var(--text-primary); font-weight: 600; text-decoration: none; }
+.card span { display: block; color: var(--text-muted); font-weight: 400; font-size: 12px; margin-top: 2px; }
+footer { margin-top: 48px; color: var(--text-muted); font-size: 12px; }
+</style>
+</head>
+<body>
+<main>
+<nav>
+<a class="brand" href="">Ensemble</a>
+<a class="switch" href="ar/" lang="ar">العربية</a>
+</nav>
+<h1>Ensemble</h1>
+<div class="cards">
+<a class="card" href="privacy/">Privacy Policy<span>Effective date: October 6, 2026</span></a>
+<a class="card" href="terms/">Terms of Service<span>Effective date: September 12, 2026</span></a>
+</div>
+<footer>© Ensemble</footer>
+</main>
+</body>
+</html>
