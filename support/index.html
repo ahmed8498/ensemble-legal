@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Contact support · Ensemble</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --background: #FAF6EF; --surface: #F5F0E8; --text-primary: #1A1A18;
+  --text-secondary: rgba(26,26,24,.66); --text-muted: rgba(26,26,24,.40);
+  --border: rgba(26,26,24,.15); --terracotta: #C4714A;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1A1A18; --surface: #272723; --text-primary: #F5F0E8;
+    --text-secondary: rgba(245,240,232,.66); --text-muted: rgba(245,240,232,.40);
+    --border: rgba(255,255,255,.08);
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--background); color: var(--text-secondary);
+  font: 400 15px/1.6 "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+main { max-width: 680px; margin: 0 auto; padding: 32px 24px 64px; }
+nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+.brand { color: var(--text-primary); font-weight: 800; font-size: 18px; letter-spacing: -.3px; text-decoration: none; }
+.brand::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--terracotta); margin-inline-end: 8px; vertical-align: middle; }
+.switch { color: var(--text-muted); font-size: 13px; text-decoration: none; border: 1px solid var(--border);
+  border-radius: 999px; padding: 6px 14px; }
+h1 { color: var(--text-primary); font-size: 30px; font-weight: 800; letter-spacing: -1px; line-height: 1.15; margin: 0 0 8px; }
+.date { color: var(--text-muted); font-size: 12px; margin: 0 0 24px; }
+h2 { color: var(--text-primary); font-size: 15px; font-weight: 600; margin: 28px 0 8px; }
+p { margin: 0 0 10px; }
+ul { margin: 0 0 10px; padding-inline-start: 20px; }
+li { margin-bottom: 6px; }
+li::marker { color: var(--terracotta); }
+a { color: var(--terracotta); }
+.cards { display: grid; gap: 12px; margin-top: 24px; }
+.card { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 22px;
+  padding: 18px 20px; color: var(--text-primary); font-weight: 600; text-decoration: none; }
+.card span { display: block; color: var(--text-muted); font-weight: 400; font-size: 12px; margin-top: 2px; }
+footer { margin-top: 48px; color: var(--text-muted); font-size: 12px; }
+</style>
+</head>
+<body>
+<main>
+<nav>
+<a class="brand" href="../">Ensemble</a>
+<a class="switch" href="../ar/support/" lang="ar">العربية</a>
+</nav>
+<h1>Contact support</h1>
+<p>Questions, problems, ideas or anything about your subscription: we read every message and reply by email.</p>
+<h2>From the app</h2>
+<p>Open Profile → Contact support, pick a topic and write your message. We reply to the email address on your account.</p>
+<h2>By email</h2>
+<p>Prefer your own mail app? Write to us at the address below. If it&#x27;s about your account, send it from the address you signed up with so we can find it.</p>
+<p><a href="mailto:ensembleusersupport@gmail.com">ensembleusersupport@gmail.com</a></p>
+<h2>Subscriptions</h2>
+<p>Ensemble Premium is billed by the App Store or Google Play. To cancel or change your plan, open the subscription settings of your store account. Refunds are handled by Apple or Google under their own policies.</p>
+<h2>Deleting your account</h2>
+<p>You can delete your account and all of its data from the app, or by email if you can&#x27;t open it.</p>
+<p><a href="../delete-account/">Delete your account</a></p>
+<h2>Legal</h2>
+<p><a href="../privacy/">Privacy Policy</a></p>
+<p><a href="../terms/">Terms of Service</a></p>
+<footer>© Ensemble</footer>
+</main>
+</body>
+</html>

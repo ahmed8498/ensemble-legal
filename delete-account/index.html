@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Delete your account · Ensemble</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --background: #FAF6EF; --surface: #F5F0E8; --text-primary: #1A1A18;
+  --text-secondary: rgba(26,26,24,.66); --text-muted: rgba(26,26,24,.40);
+  --border: rgba(26,26,24,.15); --terracotta: #C4714A;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1A1A18; --surface: #272723; --text-primary: #F5F0E8;
+    --text-secondary: rgba(245,240,232,.66); --text-muted: rgba(245,240,232,.40);
+    --border: rgba(255,255,255,.08);
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--background); color: var(--text-secondary);
+  font: 400 15px/1.6 "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+main { max-width: 680px; margin: 0 auto; padding: 32px 24px 64px; }
+nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+.brand { color: var(--text-primary); font-weight: 800; font-size: 18px; letter-spacing: -.3px; text-decoration: none; }
+.brand::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--terracotta); margin-inline-end: 8px; vertical-align: middle; }
+.switch { color: var(--text-muted); font-size: 13px; text-decoration: none; border: 1px solid var(--border);
+  border-radius: 999px; padding: 6px 14px; }
+h1 { color: var(--text-primary); font-size: 30px; font-weight: 800; letter-spacing: -1px; line-height: 1.15; margin: 0 0 8px; }
+.date { color: var(--text-muted); font-size: 12px; margin: 0 0 24px; }
+h2 { color: var(--text-primary); font-size: 15px; font-weight: 600; margin: 28px 0 8px; }
+p { margin: 0 0 10px; }
+ul { margin: 0 0 10px; padding-inline-start: 20px; }
+li { margin-bottom: 6px; }
+li::marker { color: var(--terracotta); }
+a { color: var(--terracotta); }
+.cards { display: grid; gap: 12px; margin-top: 24px; }
+.card { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 22px;
+  padding: 18px 20px; color: var(--text-primary); font-weight: 600; text-decoration: none; }
+.card span { display: block; color: var(--text-muted); font-weight: 400; font-size: 12px; margin-top: 2px; }
+footer { margin-top: 48px; color: var(--text-muted); font-size: 12px; }
+</style>
+</head>
+<body>
+<main>
+<nav>
+<a class="brand" href="../">Ensemble</a>
+<a class="switch" href="../ar/delete-account/" lang="ar">العربية</a>
+</nav>
+<h1>Delete your account</h1>
+<p>You can delete your Ensemble account and all of its data at any time.</p>
+<h2>In the app</h2>
+<ul>
+<li>Open the Profile tab.</li>
+<li>Tap Delete Account.</li>
+<li>Confirm with Delete My Account.</li>
+</ul>
+<p>Your account is deleted straight away.</p>
+<h2>Without the app</h2>
+<p>If you can&#x27;t open the app, email us from the address on your account and ask for it to be deleted. We confirm by reply and delete the account within 30 days.</p>
+<p><a href="mailto:ensembleusersupport@gmail.com">ensembleusersupport@gmail.com</a></p>
+<h2>What is deleted</h2>
+<p>Everything stored with your account is permanently removed from our servers:</p>
+<ul>
+<li>Your account and sign-in details: email address, display name and the form of address you chose.</li>
+<li>Your outings, with their titles, dates, locations and notes.</li>
+<li>Your wardrobe items and every photo you uploaded.</li>
+<li>The people in your circle.</li>
+<li>The support messages you sent from the app.</li>
+</ul>
+<p>Deletion cannot be undone.</p>
+<h2>What is kept</h2>
+<p>Nothing stays on our servers. Your purchase history stays with Apple or Google and with RevenueCat, which processes subscriptions for us, as their records of the payment. Emails you exchanged with our support inbox are kept unless you ask us to delete them too.</p>
+<h2>Your subscription</h2>
+<p>Deleting your account does not cancel Ensemble Premium. Cancel it first in the subscription settings of your App Store or Google Play account, or it will keep renewing.</p>
+<p><a href="../privacy/">Privacy Policy</a></p>
+<footer>© Ensemble</footer>
+</main>
+</body>
+</html>
